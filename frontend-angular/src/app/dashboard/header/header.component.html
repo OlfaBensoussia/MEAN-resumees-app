@@ -1,0 +1,26 @@
+<mat-toolbar class="toolbar" [ngStyle]="{'background-color': couleur}">
+    <mat-toolbar-row class="toolbar-row">
+      <span ><button routerLink="home" class="item"><h2>Home </h2></button></span>
+      <span *ngIf="showLink('route.dashboard.gestionUtilisateur')" ><button routerLink="gestionUtilisateur" class="item"><h2>Gestion Utilisateurs </h2></button></span>
+        <span *ngIf="showLink('route.dashboard.listeCondidats')" ><button routerLink="listeCondidats" class="item"><h2>Liste des candidatures </h2></button></span>
+        <span *ngIf="this.currentUserName" ><button (click)= "postuler()" class="item"><h2>Ajouter un candidat </h2></button></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
+          <span *ngIf="this.currentUserName" ><button (click)= "logout()" class="item"><h2>Déconnexion </h2></button></span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  

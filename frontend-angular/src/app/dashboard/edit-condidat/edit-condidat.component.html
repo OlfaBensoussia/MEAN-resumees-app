@@ -1,0 +1,94 @@
+<div class="centre">
+    <mat-card class="example-card">
+      <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div>
+            <h1 class="centre">Modifier les données du condidat</h1>
+          </div>
+          <div fxLayout="column" fxLayoutAlign="space-around">
+            <div>
+              <mat-form-field>
+                <input matInput type="text" placeholder="Nom" [formControl]="form.controls['nom']" pattern="[A-Za-z]{1,32}">
+              <mat-error *ngIf="form.controls['nom'].hasError('required') && form.controls['nom'].touched"
+                >Il faut ajouter un nom.</mat-error>
+              </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                  <input matInput type="text" placeholder="Prénom" [formControl]="form.controls['prenom']" pattern="[A-Za-z]{1,32}">
+                <mat-error *ngIf="form.controls['prenom'].hasError('required') && form.controls['prenom'].touched"
+                  >Il faut ajouter un prénom.</mat-error>
+                </mat-form-field>
+              </div>
+            <div>
+              <mat-form-field>
+                <input matInput placeholder="Email address" type="email" [formControl]="form.controls['email']">
+              <mat-error *ngIf="form.controls['email'].hasError('required') && form.controls['email'].touched" >You
+                must include an email address.</mat-error>
+              </mat-form-field>
+            </div>
+            <!-- <div>
+                <mat-form-field>
+                  <ngx-mat-file-input matInput placeholder="CV"  [formControl]="form.controls['cv']" change=""></ngx-mat-file-input>
+                <mat-error *ngIf="form.controls['cv'].hasError('required') && form.controls['cv'].touched" >You
+                  must include an email address.</mat-error>
+                </mat-form-field>
+              </div> -->
+            <div>
+              <mat-form-field color="accent" appearance="fill">
+                <mat-label>Date de naissance</mat-label>
+                <input matInput [matDatepicker]="picker1">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <!-- <div>
+                <mat-form-field>
+                  <input matInput type="text" placeholder="Date de naissance" [formControl]="form.controls['dateNaissance']">
+                <mat-error *ngIf="form.controls['dateNaissance'].hasError('required') && form.controls['dateNaissance'].touched"
+                  ></mat-error>
+                </mat-form-field>
+              </div> -->
+            <div>
+                <mat-form-field>
+                    <input matInput type="tel" placeholder="Numéro de téléphone" [formControl]="form.controls['numTelephone']">
+                <mat-error *ngIf="form.controls['numTelephone'].hasError('required') && form.controls['numTelephone'].touched"
+                      >Il faut ajouter un numéro de téléphone.</mat-error>
+                </mat-form-field>
+            </div>  
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Disponibilité" [formControl]="form.controls['disponibilite']" >
+                <mat-error *ngIf="form.controls['disponibilite'].hasError('required') && form.controls['disponibilite'].touched"
+                      ></mat-error>
+                </mat-form-field>
+            </div>  
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Nb années d'expériences" [formControl]="form.controls['anneeExperience']" pattern="[0-9]*">
+                <mat-error *ngIf="form.controls['anneeExperience'].hasError('required') && form.controls['anneeExperience'].touched"
+                      ></mat-error>
+                </mat-form-field>
+            </div>  
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Message" [formControl]="form.controls['message']">
+                <mat-error *ngIf="form.controls['message'].hasError('required') && form.controls['message'].touched"
+                      ></mat-error>
+                </mat-form-field>
+            </div> 
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Date de candidature" [formControl]="form.controls['dateCreation']">
+                <mat-error *ngIf="form.controls['dateCreation'].hasError('required') && form.controls['dateCreation'].touched"
+                      ></mat-error>
+                </mat-form-field>
+            </div> 
+
+            <button mat-raised-button type="submit" [disabled]="!form.valid">Modifier</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

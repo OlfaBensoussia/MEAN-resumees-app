@@ -1,0 +1,20 @@
+
+  button {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    margin: 5px;
+  }
+  
+  img {
+	width: 100%;
+	height: 150px;
+}
+  
+  
+  .centre {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  
+  

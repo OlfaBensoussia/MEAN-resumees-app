@@ -1,0 +1,253 @@
+table {
+    width: 90%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 90%;
+  }
+  
+  mat-paginator{ 
+    width: 90%;
+  }
+
+  .centre {
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .body {
+    margin: 13px;
+  }
+  
+  
+  
+  .titre {
+    margin: inherit;
+    text-align: center;
+  }
+  
+  .button-group{
+    margin-top: 10px;
+  }
+  form {
+    display: contents!important;
+  }
+  
+  mat-form-field {
+    margin-right: 5px;
+    font-size: 12px!important;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .recherche {
+    font-size: 14px;
+    width: 45%;
+    margin-left: 20px;
+  }
+  
+  iframe {
+    margin: 5px;
+  }
+  th ::ng-deep .mat-checkbox-inner-container-no-side-margin  {
+    background-color: rgba(255, 255, 255, 0.993);
+  }
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.87);
+    margin-right: 5px;
+  }
+
+  ::ng-deep .mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+    background: rgba(0, 0, 0, 0.87) !important;
+  }
+  
+  ::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  ::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: rgba(0, 0, 0, 0.87) !important;
+  }
+
+  ::ng-deep .mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: rgba(0, 0, 0, 0.87) !important;;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  ::ng-deep .mat-grid-tile .mat-figure {
+       display: unset !important;
+  }
+  
+  .mat-elevation-z8{
+  
+    margin-top: 5px; 
+  } 
+  .example-viewport {
+    /* height: 250px; */
+    border: 0px solid;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .spanText {
+      font-size: 13px;
+      color: #000000;
+      font-family: 'Helvetica Neue 55 Roman', 'Helvetica Neue';
+      font-weight: 300;
+      font-style: normal;
+      text-align: left;
+      padding-top: 23px;
+  }
+
+  .example-margin {
+      
+      float:right;
+      
+    }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+   ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color:rgba(252, 141, 66, 0.993);
+  }
+  ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: rgba(250, 111, 18, 0.993);
+  }
+  th  {
+    background-color: rgb(20, 19, 19);
+    color: white;
+    border-left: 1px solid rgb(49, 49, 49)!important;
+    text-align: center!important;    
+  }
+  
+  .mat-column-select {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    /* flex: 0 0 3% !important;  */
+    border-left: 1px solid rgb(184, 184, 184);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 5px!important;
+  text-align: unset!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .mat-column-numTel  {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 1 1 28% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 5px!important;
+    border-left: 1px solid rgb(184, 184, 184);
+    word-break: break-word;
+    text-align: center!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-prenom {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 1 1 28% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 5px!important;
+    border-left: 1px solid rgb(184, 184, 184);
+    word-break: break-word;
+    text-align: center!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+    
+  .mat-column-action {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 1 1 28% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 5px!important;
+    border-left: 1px solid rgb(184, 184, 184);
+    word-break: break-word;
+    text-align: center!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  
+  .mat-column-email {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 7% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  padding: 5px!important;
+      border-left: 1px solid rgb(184, 184, 184);
+    word-break: break-word;
+  text-align: center!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-etatCondidature  {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 28% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 5px!important;
+    border-left: 1px solid rgb(184, 184, 184);
+    word-break: break-word;
+    text-align: center!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .mat-column-statusEmail {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 7% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 5px!important;
+    border-left: 1px solid rgb(184, 184, 184);
+    word-break: break-word;
+    text-align: center!important;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+
+  
+           

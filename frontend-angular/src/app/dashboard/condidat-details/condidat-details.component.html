@@ -1,0 +1,44 @@
+<div class="body">
+    <div class="center-div1" *ngFor="let act of condidats">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Fiche du condidat: {{ act.nom }} {{ act.prenom }} </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+              <mat-list>
+                <mat-list-item>
+                  <h4 matLine> Informations générales: </h4>
+                  <p matLine><strong>Nom:</strong> {{act.nom}} </p>
+                  <p matLine><strong>Prenom:</strong> {{act.prenom}} </p>
+                  <p matLine><strong>Email:</strong> {{act.email}} </p>
+                  <p matLine><strong>CV:</strong> {{act.cv}} </p>
+                  <p matLine><strong>Date de candidature:</strong> {{act.dateCreation}} </p>
+                </mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-list>
+                <mat-list-item>
+                  <h3 matLine><strong>Détails:</strong> </h3>
+                  <p matLine> <strong>Numéro téléphone:</strong> {{act.numTelephone}} </p>
+                  <p matLine> <strong>disponibilite:</strong> {{act.disponibilite}} </p>
+                  <p matLine> <strong>Nombre d'années d'expérience:</strong> {{act.anneExperience}}</p>
+                  <p matLine> <strong>Date de naissance:</strong> {{act.dateNaissance}} </p>
+                  <p matLine> <strong>Etat de la candidature:</strong> {{act.etatCondidature}} </p>
+                  <p matLine> <strong>Status de l'émail:</strong> {{act.statusEmail}} </p>
+
+                </mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="encours" (click)="Encours()">Candidature en cours</button>
+            <button class="confirmer" (click)="Confirmer()">Confirmer candidature</button>
+            <button class="rejeter" (click)="Rejeter()">Rejeter candidature</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

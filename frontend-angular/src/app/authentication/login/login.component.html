@@ -1,0 +1,32 @@
+<div class="centre">
+  <mat-card class="example-card">
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <h2 Style="text-align: center;">SignIn</h2>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-around">
+          <div>
+            <mat-form-field>
+              <input matInput placeholder="Email address" type="email" [formControl]="form.controls['email']">
+              <mat-error *ngIf="form.controls['email'].hasError('required') && form.controls['email'].touched" >You
+                Vous devez inclure une adresse mail.</mat-error>
+              <mat-error *ngIf="form.controls['email'].errors?.email && form.controls['email'].touched" >You
+                Vous devez inclure une adresse mail valide.</mat-error>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput [type]="hide ? 'password' : 'text'" placeholder="Mot de passe" [formControl]="form.controls['password']">
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              <mat-error *ngIf="form.controls['password'].hasError('required') && form.controls['password'].touched"
+                         class="mat-text-warn">Vous devez inclure un mot de passe.</mat-error>
+            </mat-form-field>
+          </div>
+          <button mat-raised-button  type="submit" [disabled]="!form.valid">Se connecter</button>
+          <button mat-raised-button  [routerLink]="['/authentication/signup']">Inscription</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

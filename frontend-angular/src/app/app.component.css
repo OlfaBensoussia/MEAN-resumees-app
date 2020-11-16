@@ -1,0 +1,9 @@
+::ng-deep .mat-row {
+    height: auto!important;
+  }
+  
+  ::ng-deep .mat-cell  {
+    padding-top: 2px  !important;
+    padding-bottom: 2px  !important;
+  }
+  
